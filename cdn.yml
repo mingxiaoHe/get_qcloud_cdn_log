@@ -1,0 +1,17 @@
+filebeat:
+  prospectors:
+    -
+      paths:
+        - /data/logs/cdn/*.log
+      document_type: cdn-log
+      input_type: log
+      #tail_files: true
+      multiline:
+        negate: true
+        match: after
+output:
+  logstash:
+    hosts: ["10.80.2.11:5048", "10.80.2.12:5048"]
+shipper:
+logging:
+  files:
