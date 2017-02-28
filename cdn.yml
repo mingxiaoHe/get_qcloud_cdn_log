@@ -2,7 +2,7 @@ filebeat:
   prospectors:
     -
       paths:
-        - /data/logs/cdn/*.log
+        - /data/logs/cdn/*.log 
       document_type: cdn-log
       input_type: log
       #tail_files: true
