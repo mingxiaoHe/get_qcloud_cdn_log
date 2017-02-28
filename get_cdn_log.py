@@ -106,7 +106,8 @@ if __name__ == '__main__':
     startDate = endDate = tm.strftime("%Y-%m-%d %H:00:00")
 
 
-    #hosts = ['userface.51XXX.com']
+    # hosts = ['userface.51XXX.com']
+    # 要下载日志的域名
     hosts = [ 
         'pfcdn.51XXX.com',
         'pecdn.51XXX.com',
